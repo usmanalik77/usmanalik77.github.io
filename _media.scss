@@ -22,10 +22,12 @@
   }
   .contact-content-con .right-contact .i-c-2 {
     flex-direction: column;
+    font-size: 1rem;
   }
   .contact-content-con .right-contact .i-c-2 :last-child {
     margin-left: 0;
     margin-top: 1.5rem;
+    font-size: 1rem;
   }
 
   .submit-btn {
@@ -90,6 +92,30 @@
         left: 50%;
       }
     }
+  }
+  .contact-content-con {
+    flex-direction: column;
+    width: 80%;
+    .right-contact {
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+  }
+
+  .contact-content-con .right-contact .i-c-2 {
+    flex-direction: column;
+    font-size: 1rem;
+  }
+  .contact-content-con .right-contact .i-c-2 :last-child {
+    margin-left: 0;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .submit-btn {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 6rem;
   }
 }
 @media screen and (max-width: 970px) {
@@ -200,27 +226,16 @@
       }
     }
   }
-  .contact-content-con {
-    flex-direction: column;
-    width: 80%;
-    .right-contact {
-      margin-left: 0;
-      margin-top: 1rem;
+
+  .contact-content-con .left-contact .contact-info .contact-item {
+    padding-top: 2rem;
+    font-size: 1rem;
+    color: var(--color-secondary);
+  }
+  .contact-content-con .left-contact .contact-info {
+    p {
+      font-size: 0.8rem;
     }
-  }
-
-  .contact-content-con .right-contact .i-c-2 {
-    flex-direction: column;
-  }
-  .contact-content-con .right-contact .i-c-2 :last-child {
-    margin-left: 0;
-    margin-top: 1.5rem;
-  }
-
-  .submit-btn {
-    display: flex;
-    justify-content: flex-start;
-    padding-bottom: 6rem;
   }
 }
 @media screen and (max-width: 1600px) {
@@ -261,5 +276,15 @@
   .portfolios .portfolio-item {
     width: auto;
     height: auto;
+  }
+  .contact-content-con .left-contact .contact-info .contact-item {
+    padding-top: 2rem;
+    font-size: 1rem;
+    color: var(--color-secondary);
+  }
+  .contact-content-con .left-contact .contact-info {
+    p {
+      font-size: 0.8rem;
+    }
   }
 }
