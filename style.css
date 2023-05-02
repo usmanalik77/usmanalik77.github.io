@@ -812,14 +812,6 @@ section {
   .about-container .left-about p {
     padding-left: 0;
   }
-  .portfolios {
-    grid-template-columns: 1fr 1fr;
-    padding-bottom: 6rem;
-  }
-  .blogs {
-    grid-template-columns: 1fr;
-    padding-bottom: 6rem;
-  }
   .contact-content-con {
     flex-direction: column;
   }
@@ -902,6 +894,14 @@ section {
     margin: 0 auto;
     width: 50%;
     height: 80%;
+  }
+  .portfolios {
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 6rem;
+  }
+  .blogs {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
   }
   .controls {
     top: auto;
