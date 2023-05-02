@@ -189,7 +189,7 @@ section {
   top: 0;
   z-index: -1;
   -webkit-clip-path: polygon(0 0, 45% 0, 71% 100%, 0% 100%);
-  clip-path: polygon(0 0, 45% 0, 71% 100%, 0% 100%);
+          clip-path: polygon(0 0, 45% 0, 71% 100%, 0% 100%);
 }
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
@@ -203,7 +203,7 @@ section {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   transition: all 0.4s ease-in-out;
   filter: grayscale(100%);
 }
@@ -642,7 +642,7 @@ section {
   width: 100%;
   height: 300px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-radius: 15px;
 }
 .portfolios .portfolio-item .hover-items {
@@ -842,6 +842,16 @@ section {
   }
   .main-title h2 .bg-text {
     font-size: 1.1rem;
+    top: 20%;
+    left: 50%;
+  }
+  .contact-content-con .left-contact .contact-info .contact-item {
+    padding-top: 2rem;
+    font-size: 1rem;
+    color: var(--color-secondary);
+  }
+  .contact-content-con .left-contact .contact-info p {
+    font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 700px) {
@@ -863,6 +873,8 @@ section {
   }
   .main-title h2 .bg-text {
     font-size: 2.5rem;
+    top: 20%;
+    left: 50%;
   }
 }
 @media screen and (max-width: 970px) {
@@ -950,16 +962,17 @@ section {
   .main-title h2 .bg-text {
     font-size: 2.5rem;
   }
-}
-@media screen and (max-width: 1600px) {
-  header {
-    padding: 0 !important;
+  .main-title h2 {
+    font-size: 3rem;
   }
-  .section {
-    padding: 7rem 11rem;
+  .main-title h2 span {
+    font-size: 3.5rem;
   }
-}
-@media screen and (max-width: 2000px) {
+  .main-title h2 .bg-text {
+    font-size: 2.5rem;
+    top: 20%;
+    left: 50%;
+  }
   .contact-content-con {
     flex-direction: column;
     width: 80%;
@@ -981,6 +994,32 @@ section {
     padding-bottom: 6rem;
   }
 }
+@media screen and (max-width: 1600px) {
+  header {
+    padding: 0 !important;
+  }
+  .section {
+    padding: 7rem 11rem;
+  }
+  .main-title h2 {
+    font-size: 2.7rem;
+  }
+  .main-title h2 span {
+    font-size: 2.7rem;
+  }
+  .main-title h2 .bg-text {
+    font-size: 3.2rem;
+    top: 20%;
+    left: 50%;
+  }
+  .contact-content-con .left-contact .contact-info .contact-item {
+    padding-top: 2rem;
+    color: var(--color-secondary);
+  }
+  .contact-content-con .left-contact .contact-info .contact-item h4 {
+    font-size: 2rem;
+  }
+}
 @media screen and (max-width: 3500px) {
   .header-content .left-header .image {
     margin: 0 auto;
@@ -991,4 +1030,4 @@ section {
     width: auto;
     height: auto;
   }
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
