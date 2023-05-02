@@ -189,7 +189,7 @@ section {
   top: 0;
   z-index: -1;
   -webkit-clip-path: polygon(0 0, 45% 0, 71% 100%, 0% 100%);
-          clip-path: polygon(0 0, 45% 0, 71% 100%, 0% 100%);
+  clip-path: polygon(0 0, 45% 0, 71% 100%, 0% 100%);
 }
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
@@ -203,7 +203,7 @@ section {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: all 0.4s ease-in-out;
   filter: grayscale(100%);
 }
@@ -642,7 +642,7 @@ section {
   width: 100%;
   height: 300px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 15px;
 }
 .portfolios .portfolio-item .hover-items {
@@ -835,30 +835,34 @@ section {
     padding: 2rem 2.5rem !important;
   }
   .main-title h2 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   .main-title h2 span {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   .main-title h2 .bg-text {
-    font-size: 3rem;
+    font-size: 1.1rem;
   }
 }
 @media screen and (max-width: 700px) {
   .section {
     padding: 7rem 3rem;
   }
+  header .right-header .wrapper .dynamic-txts li {
+    display: flex;
+    font-size: 2rem;
+  }
   .about-stats .progress-bars {
     grid-template-columns: 1fr;
   }
   .main-title h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .main-title h2 span {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .main-title h2 .bg-text {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
 }
 @media screen and (max-width: 970px) {
@@ -887,9 +891,6 @@ section {
     width: 90%;
     margin: 0 auto;
   }
-  .right-header .name {
-    font-size: 2.5rem !important;
-  }
   .header-content .left-header .image {
     margin: 0 auto;
     width: 50%;
@@ -903,6 +904,9 @@ section {
     grid-template-columns: 1fr;
     padding-bottom: 6rem;
   }
+  .contact-content-con .left-contact {
+    font-size: 1 rem;
+  }
   .controls {
     top: auto;
     bottom: 0;
@@ -914,7 +918,7 @@ section {
     background-color: var(--color-grey-5);
   }
   .controls .control {
-    margin: 0.6rem 1rem !important;
+    margin: 0.86rem 0.6rem !important;
   }
   .timeline {
     grid-template-columns: 1fr;
@@ -938,13 +942,13 @@ section {
     grid-template-columns: 1fr 1fr;
   }
   .main-title h2 {
-    font-size: 4rem;
+    font-size: 2rem;
   }
   .main-title h2 span {
-    font-size: 4rem;
+    font-size: 2rem;
   }
   .main-title h2 .bg-text {
-    font-size: 4.5rem;
+    font-size: 2.5rem;
   }
 }
 @media screen and (max-width: 1600px) {
@@ -962,7 +966,7 @@ section {
   }
   .contact-content-con .right-contact {
     margin-left: 0;
-    margin-top: 2.5rem;
+    margin-top: 1rem;
   }
   .contact-content-con .right-contact .i-c-2 {
     flex-direction: column;
@@ -987,4 +991,4 @@ section {
     width: auto;
     height: auto;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
