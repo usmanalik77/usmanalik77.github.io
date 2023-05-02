@@ -1,25 +1,36 @@
 <?php
-// Get the form data
-$name = $_POST['name'];
-$email = $_POST['email'];
-$subject = $_POST['subject'];
-$message = $_POST['message'];
+if(isset($_POST['submit'])) {
+  // Collect the form data
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $subject = $_POST['subject'];
+  $message = $_POST['message'];
 
-// Set the recipient email address
-$to = 'usmanalik77@gmail.com';
+  // Validate form data
+  $errors = array();
+  if(empty($name)) {
+    $errors[] = 'Name is required';
+  }
+  if(empty($email)) {
+    $errors[] = 'Email is required';
+  } elseif(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    $errors[] = 'Invalid email format';
+  }
+  if(empty($subject)) {
+    $errors[] = 'Subject is required';
+  }
+  if(empty($message)) {
+    $errors[] = 'Message is required';
+  }
 
-// Set the email subject
-$email_subject = 'New message from your website: ' . $subject;
-
-// Set the email message
-$email_message = "Name: $name\nEmail: $email\n\n$message";
-
-// Set the email headers
-$headers = "From: $name <$email>\r\n";
-$headers .= "Reply-To: $email\r\n";
-
-// Send the email
-mail($to, $email_subject, $email_message, $headers);
-
-// Redirect the user to a thank-you page
-header('Location: thankyou.html');
+  // If there are no errors, send the email
+  if(empty($errors)) {
+    $to = 'usmanalik77@example.com';
+    $headers = 'From: '.$name.' <'.$email.'>' . "\r\n" .
+               'Reply-To: '.$email . "\r\n" .
+               'X-Mailer: PHP/' . phpversion();
+    mail($to, $subject, $message, $headers);
+    $success = 'Your message has been sent!';
+  }
+}
+?>
