@@ -25,7 +25,7 @@ if(isset($_POST['submit'])) {
 
   // If there are no errors, send the email
   if(empty($errors)) {
-    $to = 'usmanalik77@example.com';
+    $to = 'usmanalik77@gmail.com';
     $headers = 'From: '.$name.' <'.$email.'>' . "\r\n" .
                'Reply-To: '.$email . "\r\n" .
                'X-Mailer: PHP/' . phpversion();
