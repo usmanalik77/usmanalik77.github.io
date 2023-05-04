@@ -1043,9 +1043,6 @@ section {
     height: 60px;
     background-color: var(--color-grey-5);
   }
-  .controls {
-    width: 40px;
-  }
 }
 @media screen and (max-width: 3500px) {
   .header-content .left-header .image {
