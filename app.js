@@ -39,6 +39,14 @@ function PageTransitions() {
   themeBtn.addEventListener("click", () => {
     let element = document.body;
     element.classList.toggle("light-mode");
+    let icon = themeBtn.querySelector("i");
+    if (element.classList.contains("light-mode")) {
+      icon.classList.remove("fa-moon");
+      icon.classList.add("fa-sun");
+    } else {
+      icon.classList.remove("fa-sun");
+      icon.classList.add("fa-moon");
+    }
   });
 }
 
